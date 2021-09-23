@@ -1,0 +1,35 @@
+variable "resource_group_name" {}
+variable "backup_policy_name" {}
+variable "recovery_services_vault_name" {}
+variable "core_resource_group_name" {}
+variable "subnet_name" {}
+variable "vnet_name" {}
+variable "storage_account_name" {}
+variable "nw_resource_group_name" {}
+variable "st_resource_group_name" {}
+variable "nsg_name" {}
+variable "vmname" {}
+variable "vm_size" {}
+variable "admin_username" {}
+variable "admin_password" {}
+variable "ipaddress" {}
+variable "os" {
+    type = object({
+        publisher = string
+        offer = string
+        sku = string
+        version = string
+ })
+}
+variable "os1" {
+    type = object({
+        disk_type = string
+ })
+}
+
+variable "data" {
+    type = object({
+        disk_size = number
+        disk_type = string
+ })
+}

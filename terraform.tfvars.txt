@@ -1,0 +1,30 @@
+resource_group_name = "715699"
+backup_policy_name = "TestPolicy"
+recovery_services_vault_name = "Test-Migration-RSV"
+core_resource_group_name = "Test-Migration"
+subnet_name = "default"
+vnet_name = "linuxvm-vnet"
+nw_resource_group_name = "linuxvm"
+st_resource_group_name = "Vishnu-RG"
+nsg_name = "redhatvm01-nsg"
+storage_account_name = "vishstoraccount"
+vmname = "vmappprd01VSWEL"
+vm_size = "Standard_DS1_v2"
+admin_username = "testadmin"
+admin_password = "Password1234!"
+ipaddress = "10.0.0.6"
+os = {
+    publisher = "Canonical"
+    offer     = "UbuntuServer"
+    sku       = "16.04.0-LTS"
+    version   = "latest"
+}
+os1 = {
+    disk_type = "Standard_LRS"
+}
+data = {
+    disk_size = "8"
+    disk_type = "Standard_LRS"
+}
+
+
